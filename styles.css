@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.menu-navbar {
+    background-color: #046B99;
+    height: 5rem;
+    display: flex;
+}
+
+.menu-navbar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-navbar a {
+    color: white;
+    font-family: Impact, fantasys;
+    font-size: x-large;
+    text-decoration: none
+}
+
+.menu-navbar a:hover {
+    color: rgb(175, 228, 228);
+}
+
+.menu-navbar a.active {
+    color: rgb(65, 65, 65) !important;
+}
+
+.left-side-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-navbar li {
+    margin: 1rem;
+    list-style-type: none;
+}
+
+.right-side-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.right-side-navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
