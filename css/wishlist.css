@@ -1,0 +1,26 @@
+.flex {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font_div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 1015px;
+  height: 548px;
+  flex-shrink: 0;
+  background-color: #046b99;
+}
+
+.title_wish {
+  display: flex; 
+  height: 48px;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  text-align: center;
+}

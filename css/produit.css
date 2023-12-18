@@ -1,0 +1,171 @@
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-container {
+  height: calc(60vh - 2rem);
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  width: 70%;
+  height: 70%;
+  flex: 1 0 100%;
+}
+
+.slide-arrow {
+  color: white;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: rgb(0, 57, 119);
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slides-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slides-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.navbar-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-li {
+  display: inline;
+  float: left;
+}
+
+.navbar-li a {
+  display: block;
+  padding: 8px;
+  background-color: #046b99;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+}
+
+.img_produit {
+  width: 459px;
+  height: 391px;
+  flex-shrink: 0;
+  margin-left: 3%;
+  border: 1px solid #000;
+  background-color: grey;
+}
+
+.description_produit {
+  width: 528px;
+  height: 531px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 1px solid #000;
+}
+
+img {
+  align-items: center;
+  margin-top: -50px;
+  width: 445px;
+  height: 380px;
+}
+
+.width {
+  width: 25%;
+}
+
+.desc_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  font-family: Impact, fantasys;
+}
+
+.desc_text {
+  font-family: Impact, fantasys;
+  margin-top: 10%;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.div_bouton {
+  display: flex;
+  height: 50%;
+  align-items: end;
+  justify-content: center;
+}
+
+.div_panier {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.bouton_produit {
+  float: left;
+  position: sticky;
+  width: 70%;
+  background-color: #046b99;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Impact, fantasys;
+}
+
+.list_dots{
+  display: flex;
+}
+
+.dots {
+  margin: auto;
+  color: #046b99;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
