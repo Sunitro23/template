@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="container xlarge">
+      <p class="left">Votre Panier</p>
+      <p class="right">
+        <i class="fa fa-shopping-cart margin-right"></i>
+        <i class="fa fa-search"></i>
+      </p>
+    </header>
+
+    <nav
+      class="sidebar bar-block white collapse top"
+      style="z-index: 3; width: 250px"
+      id="mySidebar"
+    >
+      <div class="container display-container padding-16">
+        <i
+          onclick="close_menu()"
+          class="fa fa-remove hide-large button display-topright"
+        ></i>
+        <a href="./accueil.html"
+          ><h3 class="wide"><b>CHIC ET CHOC</b></h3></a
+        >
+      </div>
+      <div class="padding-64 large text-grey" style="font-weight: bold">
+        <a href="#" class="bar-item button">T-Shirts</a>
+        <a href="#" class="bar-item button">Robes</a>
+        <a
+          onclick="myAccFunc()"
+          class="button block white left-align"
+          id="myBtn"
+        >
+          Jeans
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAcc" class="bar-block hide padding-large medium">
+          <a href="#" class="bar-item button light-grey">
+            <i class="fa fa-caret-right margin-right"></i>
+            Skinny
+          </a>
+          <a href="#" class="bar-item button">Relax</a>
+          <a href="#" class="bar-item button">Coupe Botte</a>
+          <a href="#" class="bar-item button">Coupe Droite</a>
+        </div>
+        <a href="#" class="bar-item button">Vestes</a>
+        <a href="#" class="bar-item button">Sports</a>
+        <a href="#" class="bar-item button">Manteaux</a>
+        <a href="#" class="bar-item button">Chaussures</a>
+      </div>
+      <a href="#footer" class="bar-item button padding">Contact</a>
+      <a
+        class="bar-item button padding"
+        onclick="document.getElementById('newsletter').style.display='block'"
+        >Newsletter</a
+      >
+      <a href="#footer" class="bar-item button padding">S'abonner</a>
+    </nav>
+    <div style="margin-left: 250px;" class="main">
+      <table class="margin">
+        <thead>
+          <tr>
+            <th>Nom Produit</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="../images/1.jpg" alt="Produit 1" width="25%" /></td>
+            <td>19.99€</td>
+            <td>01</td>
+          </tr>
+          <tr>
+            <td><img src="../images/2.jpg" alt="Produit 2" width="25%" /></td>
+            <td>29.99€</td>
+            <td>01</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="recap">
+        <h3>TOTAL PANIER</h3>
+        <p>SOUS TOTAL: 49.98€</p>
+        <ul class="delivery-options">
+          <li>
+            <input type="radio" name="livraison" value="colissimo" /> Colissimo
+          </li>
+          <li>
+            <input type="radio" name="livraison" value="mondial_relay" />
+            Mondial Relay
+          </li>
+          <li>
+            <input type="radio" name="livraison" value="chronopost" />
+            Chronopost
+          </li>
+        </ul>
+        <button class="proceed-btn">PROCÉDER AU PAIEMENT</button>
+      </div>
+    </div>
+  </body>
+</html>
