@@ -2,49 +2,34 @@
 <html>
   <head>
     <title>Template</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header class="container xlarge">
-      <p class="left">Votre Panier</p>
-      <p class="right">
-        <i class="fa fa-shopping-cart margin-right"></i>
-        <i class="fa fa-search"></i>
-      </p>
-    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produit.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <nav
-      class="sidebar bar-block white collapse top"
-      style="z-index: 3; width: 250px"
-      id="mySidebar"
-    >
+  </head>
+  <body class="content" style="max-width:1200px">
+
+    <!-- Sidebar/menu -->
+    <nav class="sidebar bar-block white collapse top"
+      style="z-index:3;width:250px" id="mySidebar">
       <div class="container display-container padding-16">
-        <i
-          onclick="close_menu()"
-          class="fa fa-remove hide-large button display-topright"
-        ></i>
-        <a href="./accueil.html"
-          ><h3 class="wide"><b>CHIC ET CHOC</b></h3></a
-        >
+        <i onclick="close_menu()"
+          class="fa fa-remove hide-large button display-topright"></i>
+        <a href="./accueil.html"><h3 class="wide"><b>CHIC ET CHOC</b></h3></a>
       </div>
-      <div class="padding-64 large text-grey" style="font-weight: bold">
+      <div class="padding-64 large text-grey" style="font-weight:bold">
         <a href="#" class="bar-item button">T-Shirts</a>
         <a href="#" class="bar-item button">Robes</a>
-        <a
-          onclick="myAccFunc()"
-          class="button block white left-align"
-          id="myBtn"
-        >
+        <a onclick="myAccFunc()"
+          class="button block white left-align" id="myBtn">
           Jeans
           <i class="fa fa-caret-down"></i>
         </a>
-        <div id="demoAcc" class="bar-block hide padding-large medium">
+        <div id="demoAcc"
+          class="bar-block hide padding-large medium">
           <a href="#" class="bar-item button light-grey">
             <i class="fa fa-caret-right margin-right"></i>
             Skinny
@@ -59,14 +44,41 @@
         <a href="#" class="bar-item button">Chaussures</a>
       </div>
       <a href="#footer" class="bar-item button padding">Contact</a>
-      <a
-        class="bar-item button padding"
-        onclick="document.getElementById('newsletter').style.display='block'"
-        >Newsletter</a
-      >
+      <a class="bar-item button padding"
+        onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
       <a href="#footer" class="bar-item button padding">S'abonner</a>
     </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="bar top hide-large black xlarge">
+      <div class="bar-item padding-24 wide">CHIC ET CHOC</div>
+      <a
+        class="bar-item button padding-24 right" onclick="open_menu()"><i
+          class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay hide-large" onclick="close_menu()"
+      style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+    <!--Main Content-->
     <div style="margin-left: 250px;" class="main">
+      <!-- Push down content on small screens -->
+      <div class="hide-large" style="margin-top:83px"></div>
+
+      <!-- Top header -->
+      <header class="container xlarge">
+        <p class="left">Panier</p>
+        <p class="right">
+          <a href="./inscription.html" style="text-decoration: none;">
+            <i class="fa-solid fa-user margin-right"></i>
+          </a>
+          <a href="./page_panier.html" style="text-decoration: none;">
+            <i class="fa fa-shopping-cart margin-right"></i>
+          </a>
+          <i class="fa fa-search"></i>
+        </p>
+      </header>
       <table class="margin">
         <thead>
           <tr>
