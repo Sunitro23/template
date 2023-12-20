@@ -1630,3 +1630,13 @@ h6,
 .wide {
   font-family: "Montserrat", sans-serif;
 }
+
+.total_panier{
+  height: 500px;
+  width: 300px;
+  outline: #000;
+}
+
+.th_prix{
+  padding-right: 15px;
+}
