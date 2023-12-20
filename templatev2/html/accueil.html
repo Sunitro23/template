@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <title>Template</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produit.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
   </head>
   <body class="content" style="max-width:1200px">
 
@@ -12,47 +16,51 @@
     <nav class="sidebar bar-block white collapse top"
       style="z-index:3;width:250px" id="mySidebar">
       <div class="container display-container padding-16">
-        <i onclick="w3_close()"
+        <i onclick="close_menu()"
           class="fa fa-remove hide-large button display-topright"></i>
         <h3 class="wide"><b>LOGO</b></h3>
       </div>
       <div class="padding-64 large text-grey" style="font-weight:bold">
-        <a href="#" class="bar-item button">Shirts</a>
-        <a href="#" class="bar-item button">Dresses</a>
-        <a onclick="myAccFunc()" href="javascript:void(0)"
+        <a href="#" class="bar-item button">T-Shirts</a>
+        <a href="#" class="bar-item button">Robes</a>
+        <a onclick="myAccFunc()"
           class="button block white left-align" id="myBtn">
-          Jeans <i class="fa fa-caret-down"></i>
+          Jeans
+          <i class="fa fa-caret-down"></i>
         </a>
         <div id="demoAcc"
           class="bar-block hide padding-large medium">
-          <a href="#" class="bar-item button light-grey"><i
-              class="fa fa-caret-right margin-right"></i>Skinny</a>
-          <a href="#" class="bar-item button">Relaxed</a>
-          <a href="#" class="bar-item button">Bootcut</a>
-          <a href="#" class="bar-item button">Straight</a>
+          <a href="#" class="bar-item button light-grey">
+            <i class="fa fa-caret-right margin-right"></i>
+            Skinny
+          </a>
+          <a href="#" class="bar-item button">Relax</a>
+          <a href="#" class="bar-item button">Coupe Botte</a>
+          <a href="#" class="bar-item button">Coupe Droite</a>
         </div>
-        <a href="#" class="bar-item button">Jackets</a>
-        <a href="#" class="bar-item button">Gymwear</a>
-        <a href="#" class="bar-item button">Blazers</a>
-        <a href="#" class="bar-item button">Shoes</a>
+        <a href="#" class="bar-item button">Vestes</a>
+        <a href="#" class="bar-item button">Sports</a>
+        <a href="#" class="bar-item button">Manteaux</a>
+        <a href="#" class="bar-item button">Chaussures</a>
       </div>
       <a href="#footer" class="bar-item button padding">Contact</a>
-      <a href="javascript:void(0)" class="bar-item button padding"
+      <a class="bar-item button padding"
         onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
-      <a href="#footer" class="bar-item button padding">Subscribe</a>
+      <a href="#footer" class="bar-item button padding">S'abonner</a>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="bar top hide-large black xlarge">
       <div class="bar-item padding-24 wide">LOGO</div>
-      <a href="javascript:void(0)"
-        class="bar-item button padding-24 right" onclick="w3_open()"><i
+      <a
+        class="bar-item button padding-24 right" onclick="open_menu()"><i
           class="fa fa-bars"></i></a>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="overlay hide-large" onclick="w3_close()"
-      style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="overlay hide-large" onclick="close_menu()"
+      style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
 
     <!-- !PAGE CONTENT! -->
     <div class="main" style="margin-left:250px">
@@ -70,14 +78,14 @@
       </header>
 
       <!-- Image header -->
-      <div class="display-container container">
-        <img src="./images/jeans.jpg" alt="Jeans" style="width:100%">
+      <div class="display-container container" style="margin-top:30px;">
+        <img src="../images/jeans.jpg" alt="Jeans" style="width:100%">
         <div class="display-topleft text-white" style="padding:24px 48px">
-          <h1 class="jumbo hide-small">New arrivals</h1>
-          <h1 class="hide-large hide-medium">New arrivals</h1>
-          <h1 class="hide-small">COLLECTION 2016</h1>
+          <h1 class="jumbo hide-small">Nouvelle Arrivées</h1>
+          <h1 class="hide-large hide-medium">Nouvelle Arrivées</h1>
+          <h1 class="hide-small">COLLECTION 2023</h1>
           <p><a href="#jeans"
-              class="button black padding-large large">SHOP NOW</a></p>
+              class="button black padding-large large">ACHETER MAINTENANT</a></p>
         </div>
       </div>
 
@@ -89,70 +97,70 @@
       <div class="row grayscale">
         <div class="col l3 s6">
           <div class="container">
-            <img src="./images/1.jpg" style="width:100%">
-            <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+            <img src="../images/1.jpg" style="width:100%">
+            <p>Skinny Jeans<br><b>24.99€</b></p>
           </div>
           <div class="container">
-            <img src="./images/2.jpg" style="width:100%">
-            <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+            <img src="../images/2.jpg" style="width:100%">
+            <p>Jeans<br><b>19.99€</b></p>
           </div>
         </div>
 
         <div class="col l3 s6">
           <div class="container">
             <div class="display-container">
-              <img src="./images/3.jpg" style="width:100%">
-              <span class="tag display-topleft">New</span>
+              <img src="../images/3.jpg" style="width:100%">
+              <span class="tag display-topleft">Nouveau</span>
               <div class="display-middle display-hover">
-                <button class="button black">Buy now <i
+                <button class="button black">Acheter Maintenant <i
                     class="fa fa-shopping-cart"></i></button>
               </div>
             </div>
-            <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+            <p>Jeans<br><b>19.99€</b></p>
           </div>
           <div class="container">
-            <img src="./images/1.jpg" style="width:100%">
-            <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+            <img src="../images/1.jpg" style="width:100%">
+            <p>Skinny Jeans<br><b>20.50€</b></p>
           </div>
         </div>
 
         <div class="col l3 s6">
           <div class="container">
-            <img src="./images/2.jpg" style="width:100%">
+            <img src="../images/2.jpg" style="width:100%">
             <p>Washed Skinny Jeans<br><b>$20.50</b></p>
           </div>
           <div class="container">
             <div class="display-container">
-              <img src="./images/3.jpg" style="width:100%">
-              <span class="tag display-topleft">Sale</span>
+              <img src="../images/3.jpg" style="width:100%">
+              <span class="tag display-topleft">Soldes</span>
               <div class="display-middle display-hover">
-                <button class="button black">Buy now <i
+                <button class="button black">Acheter Maintenant <i
                     class="fa fa-shopping-cart"></i></button>
               </div>
             </div>
-            <p>Vintage Skinny Jeans<br><b class="text-red">$14.99</b></p>
+            <p>Vintage Skinny Jeans<br><b class="text-red">14.99€</b></p>
           </div>
         </div>
 
         <div class="col l3 s6">
           <div class="container">
-            <img src="./images/2.jpg" style="width:100%">
-            <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+            <img src="../images/2.jpg" style="width:100%">
+            <p>Vintage Skinny Jeans<br><b>14.99€</b></p>
           </div>
           <div class="container">
-            <img src="./images/1.jpg" style="width:100%">
-            <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+            <img src="../images/1.jpg" style="width:100%">
+            <p>Skinny Jeans<br><b>24.99€</b></p>
           </div>
         </div>
       </div>
 
       <!-- Subscribe section -->
       <div class="container black padding-32">
-        <h1>Subscribe</h1>
-        <p>To get special offers and VIP treatment:</p>
+        <h1>S'abonner</h1>
+        <p>Pour bénéficier d'offres spéciales et d'un traitement VIP :</p>
         <p><input class="input border" type="text"
-            placeholder="Enter e-mail" style="width:100%"></p>
-        <button type="button" class="button red margin-bottom">Subscribe</button>
+            placeholder="Entrer e-mail" style="width:100%"></p>
+        <button type="button" class="button red margin-bottom">S'abonner</button>
       </div>
 
       <!-- Footer -->
@@ -160,17 +168,17 @@
         <div class="row-padding">
           <div class="col s4">
             <h4>Contact</h4>
-            <p>Questions? Go ahead.</p>
+            <p>Questions? Allez-y.</p>
             <form action="/action_page.php" target="_blank">
               <p><input class="input border" type="text"
-                  placeholder="Name" name="Name" required></p>
+                  placeholder="Nom" name="Name" required></p>
               <p><input class="input border" type="text"
                   placeholder="Email" name="Email" required></p>
               <p><input class="input border" type="text"
-                  placeholder="Subject" name="Subject" required></p>
+                  placeholder="Sujet" name="Subject" required></p>
               <p><input class="input border" type="text"
                   placeholder="Message" name="Message" required></p>
-              <button type="submit" class="button block black">Send</button>
+              <button type="submit" class="button block black">Envoyer</button>
             </form>
           </div>
 
@@ -188,19 +196,12 @@
 
           <div class="col s4 justify">
             <h4>Store</h4>
-            <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-            <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-            <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-            <h4>We accept</h4>
-            <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-            <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+            <p><i class="fa fa-fw fa-map-marker"></i> LOGO </p>
+            <p><i class="fa fa-fw fa-phone"></i> 0888558869</p>
+            <p><i class="fa fa-fw fa-envelope"></i> prout@gmail.com</p>
+            <h4>Nous acceptons</h4>
+            <p><i class="fa fa-fw fa-credit-card"></i> Carte de Crédit</p>
             <br>
-            <i class="fa fa-facebook-official hover-opacity large"></i>
-            <i class="fa fa-instagram hover-opacity large"></i>
-            <i class="fa fa-snapchat hover-opacity large"></i>
-            <i class="fa fa-pinterest-p hover-opacity large"></i>
-            <i class="fa fa-twitter hover-opacity large"></i>
-            <i class="fa fa-linkedin hover-opacity large"></i>
           </div>
         </div>
       </footer>
@@ -216,18 +217,18 @@
             onclick="document.getElementById('newsletter').style.display='none'"
             class="fa fa-remove right button transparent xxlarge"></i>
           <h2 class="wide">NEWSLETTER</h2>
-          <p>Join our mailing list to receive updates on new arrivals and
-            special offers.</p>
+          <p>Rejoignez notre liste de diffusion pour recevoir des mises à jour
+            sur les nouvelles arrivées et les offres spéciales.</p>
           <p><input class="input border" type="text"
-              placeholder="Enter e-mail"></p>
+              placeholder="Entrer e-mail"></p>
           <button type="button"
             class="button padding-large red margin-bottom"
-            onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+            onclick="document.getElementById('newsletter').style.display='none'">S'abonner</button>
         </div>
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="../js/menu.js"></script>
 
   </body>
 </html>
