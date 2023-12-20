@@ -62,11 +62,15 @@
             style="cursor:pointer" title="close side menu" id="myOverlay">
         </div>
 
-        <!-- Product content -->
+        <!-- !PAGE CONTENT! -->
         <div class="main" style="margin-left:250px">
+
+            <!-- Push down content on small screens -->
+            <div class="hide-large" style="margin-top:83px"></div>
+
             <!-- Top header -->
             <header class="container xlarge">
-                <p class="left">Produit</p>
+                <p class="left">A Propos</p>
                 <p class="right">
                     <a href="./inscription.html" style="text-decoration: none;">
                         <i class="fa-solid fa-user margin-right"></i>
@@ -77,43 +81,31 @@
                     <i class="fa fa-search"></i>
                 </p>
             </header>
-            <div class="col">
-                <div class="container white">
-                    <section class="slider-wrapper center">
-                        <ul class="slides-container" id="slides-container"
-                            style="height: auto;margin-bottom: 10px;">
-                            <li class="slide"><img src="../images/1.jpg"
-                                    alt="jeans1" style="width:auto"></li>
-                            <li class="slide"><img src="../images/2.jpg"
-                                    alt="jeans2" style="width:auto"></li>
-                            <li class="slide"><img src="../images/3.jpg"
-                                    alt="jeans3" style="width:auto;"></li>
-                        </ul>
-                        <ul style="margin: 0;display: flex;">
-                            <i class="fa-solid fa-circle" style="margin:auto"></i>
-                            <i class="fa-solid fa-circle" style="margin:auto"></i>
-                            <i class="fa-solid fa-circle" style="margin:auto"></i>
-                        </ul>
-                    </section>
-                    <button class="button black padding-large large"
-                        style="margin-bottom: 20px;">AJOUTER
-                        AU PANIER</button>
-                </div>
-                <span class="width"></span>
-                <div class="container white">
-                    <h1 class="jumbo hide-small">PRODUIT</h1>
-                    <p>Un pantalon en jeans (métonymie du tissu de jean), blue
-                        jeans, également et indifféremment appelé jean, jeans,
-                        blue-jean ou blue-jeans, est un pantalon à coutures,
-                        coupé dans une serge denim, renforcé par des rivets, qui
-                        à l'origine est un vêtement de travail. Par extension,
-                        le denim est lui-même dénommé jean. Étiquette du célèbre
-                        modèle de jeans Levi's 501.</p>
+            <div id="entreprise" class="light-grey container center">
+                <h1>Notre Entreprise : Chic & Choc</h1>
+                <p>Chic & Choc est une entreprise de mode fictive basée à Paris,
+                    France. Nous nous spécialisons dans la création de vêtements
+                    de haute qualité pour hommes et femmes.</p>
 
-                    <button class="button black padding-large large"
-                        style="margin-bottom: 20px;">COMMENTAIRES</button>
-                </div>
+                <h2>Notre Histoire</h2>
+                <p>Fondée en 2020, Chic & Choc a rapidement gagné en popularité
+                    grâce à son engagement envers la qualité et le style. Nos
+                    créations uniques et tendances ont fait de nous un nom
+                    reconnu dans l'industrie de la mode.</p>
+
+                <h2>Notre Mission</h2>
+                <p>Notre mission est de fournir à nos clients des vêtements
+                    élégants et confortables qui les font se sentir confiants et
+                    beaux. Nous nous engageons à utiliser des matériaux durables
+                    et éthiques dans toutes nos créations.</p>
+
+                <h2>Nos Produits</h2>
+                <p>Nous offrons une large gamme de produits, y compris des
+                    robes, des chemises, des pantalons, des accessoires et plus
+                    encore. Chaque pièce est conçue avec soin et attention aux
+                    détails pour garantir la satisfaction de nos clients.</p>
             </div>
+
             <!-- Subscribe section -->
             <div class="container black padding-32">
                 <h1>S'abonner</h1>
@@ -157,8 +149,7 @@
 
                     <div class="col s4 justify">
                         <h4>Store</h4>
-                        <p><i class="fa fa-fw fa-map-marker"></i> CHIC ET CHOC
-                        </p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> CHIC ET CHOC </p>
                         <p><i class="fa fa-fw fa-phone"></i> 0888558869</p>
                         <p><i class="fa fa-fw fa-envelope"></i> prout@gmail.com</p>
                         <h4>Nous acceptons</h4>
@@ -181,8 +172,7 @@
                         class="fa fa-remove right button transparent xxlarge"></i>
                     <h2 class="wide">NEWSLETTER</h2>
                     <p>Rejoignez notre liste de diffusion pour recevoir des
-                        mises à
-                        jour
+                        mises à jour
                         sur les nouvelles arrivées et les offres spéciales.</p>
                     <p><input class="input border" type="text"
                             placeholder="Entrer e-mail"></p>
@@ -192,8 +182,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="../js/menu.js"></script>
 
-</body>
-<script src="../js/script.js"></script>
+        <script src="../js/menu.js"></script>
+
+    </body>
+</html>
