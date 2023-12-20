@@ -1,32 +1,20 @@
-const menuNavbar = document.querySelector(".menu-navbar");
-const menuBurger = document.querySelector(".menu-burger");
-
-function checkScreenSize() {
-  if (window.matchMedia("(max-width: 768px)").matches) {
-    menuNavbar.style.display = "none";
-    menuBurger.style.display = "block";
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf(" show") == -1) {
+    x.className += " show";
   } else {
-    menuNavbar.style.display = "block";
-    menuBurger.style.display = "none";
+    x.className = x.className.replace(" show", "");
   }
 }
 
-function toggleMenu() {
-  var menuItems = document.querySelector(".menu-items");
-  if (menuItems.style.display === "none") {
-    menuItems.style.display = "block";
-    menuItems.style.transform = "translateX(-100%)";
-    setTimeout(() => {
-      menuItems.style.transform = "translateX(0)";
-    }, 0);
-    menuItems.style.transition = "transform 0.3s ease-in-out";
-  } else {
-    menuItems.style.transform = "translateX(-100%)";
-    setTimeout(() => {
-      menuItems.style.display = "none";
-    }, 300);
-  }
+document.getElementById("myBtn").click();
+
+function open_menu() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
 }
 
-window.addEventListener("load", checkScreenSize);
-window.addEventListener("resize", checkScreenSize);
+function close_menu() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}

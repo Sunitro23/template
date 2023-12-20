@@ -62,15 +62,12 @@
             style="cursor:pointer" title="close side menu" id="myOverlay">
         </div>
 
-        <!-- !PAGE CONTENT! -->
+        <!-- Product content -->
         <div class="main" style="margin-left:250px">
-
-            <!-- Push down content on small screens -->
-            <div class="hide-large" style="margin-top:83px"></div>
-
             <!-- Top header -->
             <header class="container xlarge">
-                <p class="left">Conditions d'Utilisations</p>
+                <div class="hide-large" style="margin-top:83px"></div>
+                <p class="left">Produit</p>
                 <p class="right">
                     <a href="./inscription.html" style="text-decoration: none;">
                         <i class="fa-solid fa-user margin-right"></i>
@@ -81,39 +78,41 @@
                     <i class="fa fa-search"></i>
                 </p>
             </header>
-            <!-- Conditions -->
-            <div id="conditions" class="container light-grey center">
-                <h1>Conditions d'Utilisation</h1>
-                <p>En utilisant le site d'e-commerce Chic Et Choc, vous acceptez
-                    les conditions d'utilisation suivantes :</p>
+            <div class="col">
+                <div class="container white">
+                    <section class="slider-wrapper center">
+                        <ul class="slides-container" id="slides-container"
+                            style="height: auto;margin-bottom: 10px;">
+                            <li class="slide"><img src="../images/1.jpg"
+                                    alt="jeans1" style="width:auto"></li>
+                            <li class="slide"><img src="../images/2.jpg"
+                                    alt="jeans2" style="width:auto"></li>
+                            <li class="slide"><img src="../images/3.jpg"
+                                    alt="jeans3" style="width:auto;"></li>
+                        </ul>
+                        <ul style="margin: 0;display: flex;">
+                            <i class="fa-solid fa-circle" style="margin:auto"></i>
+                            <i class="fa-solid fa-circle" style="margin:auto"></i>
+                            <i class="fa-solid fa-circle" style="margin:auto"></i>
+                        </ul>
+                    </section>
+                    <button
+                        class="button black padding-large large margin-bottom">AJOUTER
+                        AU PANIER</button>
+                </div>
+                <span class="width"></span>
+                <div class="container white margin-bottom">
+                    <h1 class="jumbo hide-small">PRODUIT</h1>
+                    <p>Un pantalon en jeans (métonymie du tissu de jean), blue
+                        jeans, également et indifféremment appelé jean, jeans,
+                        blue-jean ou blue-jeans, est un pantalon à coutures,
+                        coupé dans une serge denim, renforcé par des rivets, qui
+                        à l'origine est un vêtement de travail. Par extension,
+                        le denim est lui-même dénommé jean. Étiquette du célèbre
+                        modèle de jeans Levi's 501.</p>
 
-                <h2>1. Compte Utilisateur</h2>
-                <p>Les utilisateurs doivent créer un compte pour effectuer des
-                    achats. Vous êtes responsable de la sécurité de votre compte
-                    et de la confidentialité de votre mot de passe.</p>
-
-                <h2>2. Transactions</h2>
-                <p>Toutes les transactions sont finales une fois qu'elles ont
-                    été confirmées. Les remboursements et les échanges sont à la
-                    discrétion de Chic Et Choc.</p>
-
-                <h2>3. Contenu</h2>
-                <p>Le contenu de ce site, y compris les images, descriptions de
-                    produits et prix, est la propriété de Chic Et Choc et ne
-                    peut être utilisé sans notre permission écrite.</p>
-
-                <h2>4. Responsabilité</h2>
-                <p>Chic Et Choc n'est pas responsable des dommages ou pertes
-                    résultant de l'utilisation de ce site ou de nos produits.
-                    Nous ne garantissons pas que le site sera toujours
-                    disponible ou sans erreurs.</p>
-
-                <h2>5. Modifications</h2>
-                <p>Nous nous réservons le droit de modifier ces conditions à
-                    tout moment. Les modifications entreront en vigueur dès leur
-                    publication sur ce site.</p>
+                </div>
             </div>
-
             <!-- Subscribe section -->
             <div class="container black padding-32">
                 <h1>S'abonner</h1>
@@ -146,7 +145,7 @@
                     <div class="col s4">
                         <h4>À propos</h4>
                         <p><a href="./propos.html">À propos de nous</a></p>
-                        <p><a href="#">Nous recrutons</a></p>
+                        <p><a href="./recrutement.html">Nous recrutons</a></p>
                         <p><a href="#">Support</a></p>
                         <p><a href="#">Trouver un magasin</a></p>
                         <p><a href="#">Paiement</a></p>
@@ -181,7 +180,8 @@
                         class="fa fa-remove right button transparent xxlarge"></i>
                     <h2 class="wide">NEWSLETTER</h2>
                     <p>Rejoignez notre liste de diffusion pour recevoir des
-                        mises à jour
+                        mises à
+                        jour
                         sur les nouvelles arrivées et les offres spéciales.</p>
                     <p><input class="input border" type="text"
                             placeholder="Entrer e-mail"></p>
@@ -191,8 +191,7 @@
                 </div>
             </div>
         </div>
-
-        <script src="../js/menu.js"></script>
-
-    </body>
-</html>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/carousel.js"></script>
+</body>

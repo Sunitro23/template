@@ -69,7 +69,7 @@
             <header class="container xlarge">
                 <div class="hide-large" style="margin-top:83px"></div>
 
-                <p class="left">Jeans</p>
+                <p class="left">Postuler</p>
                 <p class="right">
                     <a href="./inscription.html" style="text-decoration: none;">
                         <i class="fa-solid fa-user margin-right"></i>
@@ -80,20 +80,22 @@
                     <i class="fa fa-search"></i>
                 </p>
             </header>
-            <div class="container center">
-                <h1>Erreur 404</h1>
-                <p>La page que vous recherchez est introuvable.</p>
-                <p>Veuillez vérifier l'URL ou retourner à la <a
-                        href="./accueil.html    ">page d'accueil</a>.</p>
-            </div>
-
-            <!-- Subscribe section -->
+            <!-- Apply section -->
             <div class="container black padding-32">
-                <h1>S'abonner</h1>
-                <p>Pour bénéficier d'offres spéciales et d'un traitement VIP :</p>
-                <p><input class="input border" type="text"
-                        placeholder="Entrer e-mail" style="width:100%"></p>
-                <button type="button" class="button red margin-bottom">S'abonner</button>
+                <h1>Postuler</h1>
+                <p>Pour postuler auprès de Chic et Choc :</p>
+                <form action="/submit_application" method="POST">
+                    <p><input class="input border" type="text" placeholder="Nom"
+                            name="name" required></p>
+                    <p><input class="input border" type="email"
+                            placeholder="Email" name="email" required></p>
+                    <p><input class="input border" type="text"
+                            placeholder="Poste souhaité" name="position"
+                            required></p>
+                    <p><textarea class="input border" placeholder="Message"
+                            name="message" required></textarea></p>
+                    <button type="submit" class="button red margin-bottom">Postuler</button>
+                </form>
             </div>
 
             <!-- Footer -->
@@ -119,7 +121,7 @@
                     <div class="col s4">
                         <h4>À propos</h4>
                         <p><a href="./propos.html">À propos de nous</a></p>
-                        <p><a href="#">Nous recrutons</a></p>
+                        <p><a href="./recrutement.html">Nous recrutons</a></p>
                         <p><a href="#">Support</a></p>
                         <p><a href="#">Trouver un magasin</a></p>
                         <p><a href="#">Paiement</a></p>
