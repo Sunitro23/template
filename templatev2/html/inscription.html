@@ -18,7 +18,7 @@
             <div class="container display-container padding-16">
                 <i onclick="close_menu()"
                     class="fa fa-remove hide-large button display-topright"></i>
-                <h3 class="wide"><b>LOGO</b></h3>
+                <a href="./accueil.html"><h3 class="wide"><b>CHIC ET CHOC</b></h3></a>
             </div>
             <div class="padding-64 large text-grey" style="font-weight:bold">
                 <a href="#" class="bar-item button">T-Shirts</a>
@@ -51,7 +51,7 @@
 
         <!-- Top menu on small screens -->
         <header class="bar top hide-large black xlarge">
-            <div class="bar-item padding-24 wide">LOGO</div>
+            <div class="bar-item padding-24 wide">CHIC ET CHOC</div>
             <a
                 class="bar-item button padding-24 right" onclick="open_menu()"><i
                     class="fa fa-bars"></i></a>
@@ -59,8 +59,12 @@
         <!-- Top header -->
         <header class="container xlarge">
             <p class="right">
-                <i class="fa-solid fa-user margin-right"></i>
-                <i class="fa fa-shopping-cart margin-right"></i>
+                <a href="./inscription.html" style="text-decoration: none;">
+                    <i class="fa-solid fa-user margin-right"></i>
+                </a>
+                <a href="./page_panier.html" style="text-decoration: none;">
+                    <i class="fa fa-shopping-cart margin-right"></i>
+                </a>
                 <i class="fa fa-search"></i>
             </p>
         </header>
@@ -79,8 +83,11 @@
                     <label for="password">Mot de passe:</label>
                     <input type="password" id="password" name="password"
                         style="width: 50%;" required>
-                    <button type="submit"
-                        style="margin-top: 20px;margin-bottom: 20px;">S'inscrire</button>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+                        <button type="submit" style="margin-right: 10px;">S'inscrire</button>
+                        <a href="./connexion.html">Se Connecter</a>
+                    </div>
                 </form>
             </div>
             <!-- Subscribe section -->
@@ -114,7 +121,7 @@
 
                     <div class="col s4">
                         <h4>À propos</h4>
-                        <p><a href="#">À propos de nous</a></p>
+                        <p><a href="./propos.html">À propos de nous</a></p>
                         <p><a href="#">Nous recrutons</a></p>
                         <p><a href="#">Support</a></p>
                         <p><a href="#">Trouver un magasin</a></p>
@@ -126,7 +133,7 @@
 
                     <div class="col s4 justify">
                         <h4>Store</h4>
-                        <p><i class="fa fa-fw fa-map-marker"></i> LOGO </p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> CHIC ET CHOC </p>
                         <p><i class="fa fa-fw fa-phone"></i> 0888558869</p>
                         <p><i class="fa fa-fw fa-envelope"></i> prout@gmail.com</p>
                         <h4>Nous acceptons</h4>
