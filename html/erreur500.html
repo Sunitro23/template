@@ -56,39 +56,36 @@
                 class="bar-item button padding-24 right" onclick="open_menu()"><i
                     class="fa fa-bars"></i></a>
         </header>
-        <!-- Top header -->
-        <header class="container xlarge">
-            <p class="right">
-                <a href="./inscription.html" style="text-decoration: none;">
-                    <i class="fa-solid fa-user margin-right"></i>
-                </a>
-                <a href="./page_panier.html" style="text-decoration: none;">
-                    <i class="fa fa-shopping-cart margin-right"></i>
-                </a>
-                <i class="fa fa-search"></i>
-            </p>
-        </header>
-        <!-- Connection Page -->
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="overlay hide-large" onclick="close_menu()"
+            style="cursor:pointer" title="close side menu" id="myOverlay">
+        </div>
+
+        <!-- !PAGE CONTENT! -->
         <div class="main" style="margin-left:250px">
-            <div class="light-grey container center">
-                <form
-                    style="display:flex;flex-direction: column;align-items: start;">
-                    <h2>Connexion</h2>
-                    <label for="username">Nom d'utilisateur:</label>
-                    <input type="text" id="username" name="username"
-                        style="width: 50%;" required>
-                    <label for="password">Mot de passe:</label>
-                    <input type="password" id="password" name="password"
-                        style="width: 50%;"
-                        required>
-                    <div
-                        style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-                        <button type="submit" style="margin-right: 10px;">Se
-                            connecter</button>
-                        <a href="#">Mot de passe oublié</a>
-                    </div>
-                </form>
+
+            <!-- Top header -->
+            <header class="container xlarge">
+                <div class="hide-large" style="margin-top:83px"></div>
+
+                <p class="left">Jeans</p>
+                <p class="right">
+                    <a href="./inscription.html" style="text-decoration: none;">
+                        <i class="fa-solid fa-user margin-right" alt="page compte utilisateur"></i>
+                    </a>
+                    <a href="./page_panier.html" style="text-decoration: none;">
+                        <i class="fa fa-shopping-cart margin-right" alt="page panier"></i>
+                    </a>
+                    <i class="fa fa-search" alt="page recherche"></i>
+                </p>
+            </header>
+            <div class="container center">
+                <h1>Erreur 500</h1>
+                <p>Oups... Il se peut qu'il y ait beaucoup de monde ici</p>
+                <p>Veuillez rafraîchir la page plus tard.</p>
             </div>
+
             <!-- Subscribe section -->
             <div class="container black padding-32">
                 <h1>S'abonner</h1>
@@ -121,7 +118,7 @@
                     <div class="col s4">
                         <h4>À propos</h4>
                         <p><a href="./propos.html">À propos de nous</a></p>
-                        <p><a href="#">Nous recrutons</a></p>
+                        <p><a href="./recrutement.html">Nous recrutons</a></p>
                         <p><a href="#">Support</a></p>
                         <p><a href="#">Trouver un magasin</a></p>
                         <p><a href="#">Paiement</a></p>
@@ -132,7 +129,8 @@
 
                     <div class="col s4 justify">
                         <h4>Store</h4>
-                        <p><i class="fa fa-fw fa-map-marker"></i> CHIC ET CHOC </p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> CHIC ET CHOC
+                        </p>
                         <p><i class="fa fa-fw fa-phone"></i> 0888558869</p>
                         <p><i class="fa fa-fw fa-envelope"></i> prout@gmail.com</p>
                         <h4>Nous acceptons</h4>
@@ -145,6 +143,7 @@
 
             <!-- End page content -->
         </div>
+
         <!-- Newsletter Modal -->
         <div id="newsletter" class="modal">
             <div class="modal-content animate-zoom" style="padding:32px">
