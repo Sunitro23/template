@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(hideSpinner, 3000);
         setTimeout(redirectToHomePage, 3000); 
       } else {
-        hideSpinner();
+        hideSpinner();        
       }
     }
   
