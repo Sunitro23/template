@@ -4,7 +4,7 @@
     <title>Chic Et Choc</title><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-      content="Welcome to Chic et Choc - your one-stop shop for stylish clothing and accessories. Explore our collection of trendy t-shirts, dresses, jeans, jackets, and more. Shop now and stay fashionable!">
+      content="Bienvenue chez Chic et Choc - votre boutique en ligne pour des vêtements et accessoires élégants. Découvrez notre collection de t-shirts, robes, jeans, vestes et plus encore. Faites vos achats dès maintenant et restez à la mode!">
     <meta name="keywords"
       content="Chic et Choc, clothing, fashion, t-shirts, dresses, jeans, jackets, accessories">
     <meta name="author" content="Chic et Choc">
@@ -26,28 +26,30 @@
         <a href="./accueil.html"><h3 class="wide"><b>CHIC ET CHOC</b></h3></a>
       </div>
       <div class="padding-64 large text-grey" style="font-weight: bold">
-        <a href="#" class="bar-item button">T-Shirts</a>
-        <a href="#" class="bar-item button">Robes</a>
+        <a href="#" class="bar-item button" tabindex="0">T-Shirts</a>
+        <a href="#" class="bar-item button" tabindex="0">Robes</a>
         <a
           onclick="myAccFunc()"
           class="button block white left-align"
-          id="myBtn">
+          id="myBtn" tabindex="0">
           Jeans
           <i class="fa fa-caret-down"></i>
         </a>
         <div id="demoAcc" class="bar-block hide padding-large medium">
-          <a href="#" class="bar-item button light-grey">
+          <a href="#" class="bar-item button light-grey" tabindex="0">
             <i class="fa fa-caret-right margin-right"></i>
             Skinny
           </a>
-          <a href="#" class="bar-item button">Relax</a>
-          <a href="#" class="bar-item button">Coupe Botte</a>
-          <a href="#" class="bar-item button">Coupe Droite</a>
+          <a href="#" class="bar-item button" tabindex="0">Relax</a>
+          <a href="#" class="bar-item button" tabindex="0">Coupe Botte</a>
+          <a href="#" class="bar-item button" tabindex="0">Coupe Droite</a>
         </div>
-        <a href="#" class="bar-item button">Vestes</a>
-        <a href="#" class="bar-item button">Sports</a>
-        <a href="#" class="bar-item button">Manteaux</a>
-        <a href="#" class="bar-item button">Chaussures</a>
+        <a href="#" class="bar-item button" tabindex="0">Vestes</a>
+        <a href="#" class="bar-item button" tabindex="0">Sports</a>
+        <a href="#" class="bar-item button" tabindex="0"
+          tabindex="0">Manteaux</a>
+        <a href="#" class="bar-item button" tabindex="0"
+          tabindex="0">Chaussures</a>
       </div>
       <a href="#footer" class="bar-item button padding">Contact</a>
       <a
@@ -92,25 +94,6 @@
         </p>
       </header>
 
-      <!-- Image header -->
-      <!-- <div class="display-container container" style="margin-top: 30px">
-        <img
-          alt="photo jean"
-          src="../images/jeans.jpg"
-          alt="Jeans"
-          style="width: 100%" />
-        <div class="display-topleft text-white" style="padding: 24px 48px">
-          <h1 class="jumbo hide-small">Nouvelles Arrivées</h1>
-          <h1 class="hide-large hide-medium">Nouvelle Arrivées</h1>
-          <h1 class="hide-small">COLLECTION 2023</h1>
-          <p>
-            <a
-              href="./fiche_produit.html"
-              class="button black padding-large large">ACHETER MAINTENANT</a>
-          </p>
-        </div>
-      </div> -->
-
       <div class="display-container container" style="margin-top: 30px">
         <video controls width="100%" height="auto" autoplay loop muted>
           <source src="../video/presentation.mp4" type="video/mp4" />
@@ -130,7 +113,7 @@
           <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/1.jpg" style="width: 100%" />
-              <div class="display-middle display-hover" tabindex="0">
+              <div class="display-middle display-hover acheter" tabindex="0">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -140,13 +123,13 @@
             </div>
             <p>Skinny Jeans<br /><b>24.99€</b></p>
           </div>
-          <div class="container product">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img
                 alt="photo jean"
                 src="../images/2.jpg"
                 style="width: 100%" />
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -159,11 +142,11 @@
         </div>
 
         <div class="col l3 s6">
-          <div class="container product">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/3.jpg" style="width: 100%" />
               <span class="tag display-topleft">Nouveau</span>
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -173,10 +156,10 @@
             </div>
             <p>Jeans<br /><b>19.99€</b></p>
           </div>
-          <div class="container">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/1.jpg" style="width: 100%" />
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -189,10 +172,10 @@
         </div>
 
         <div class="col l3 s6">
-          <div class="container">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/2.jpg" style="width: 100%" />
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -202,11 +185,11 @@
             </div>
             <p>Washed Skinny Jeans<br /><b>20.50€</b></p>
           </div>
-          <div class="container">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/3.jpg" style="width: 100%" />
               <span class="tag display-topleft">Soldes</span>
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -219,10 +202,10 @@
         </div>
 
         <div class="col l3 s6">
-          <div class="container">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/2.jpg" style="width: 100%" />
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
@@ -232,10 +215,10 @@
             </div>
             <p>Vintage Skinny Jeans<br /><b>14.99€</b></p>
           </div>
-          <div class="container">
+          <div class="container product" tabindex="0">
             <div class="display-container">
               <img alt="photo jean" src="../images/1.jpg" style="width: 100%" />
-              <div class="display-middle display-hover">
+              <div class="display-middle display-hover acheter">
                 <a href="./fiche_produit.html">
                   <button class="button black">
                     Acheter Maintenant <i class="fa fa-shopping-cart"></i>
